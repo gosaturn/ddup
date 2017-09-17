@@ -3,6 +3,12 @@
 
 ## 基础
 
+**bind**
+```
+int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+```
+- bind函数把一个地址族中的特定`地址赋给socket`, 对应AF_INET、AF_INET6就是把一个ipv4或ipv6地址和端口号组合赋给socket
+
 **accept**
 ```
 int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
